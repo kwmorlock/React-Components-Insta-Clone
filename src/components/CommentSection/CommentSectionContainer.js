@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import CommentInput from "./CommentInput";
 import Comment from "./Comment";
 import "./Comment.css";
+// import dummyData from "../../dummy-data";
+// import PostsPage from "./PostsContainer/PostsPage";
 
 const CommentSection = props => {
   // Add state for the comments
@@ -10,7 +12,8 @@ const CommentSection = props => {
 
   return (
     <div>
-      {/* map through the comments data and return the Comment component */}
+     
+    {comments.map(commentMeow => <Comment comment ={commentMeow}/>)};
       <CommentInput />
     </div>
   );
