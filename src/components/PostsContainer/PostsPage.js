@@ -11,7 +11,7 @@ const PostsPage = () => {
   const [posts, setPosts] = useState(dummyData)
   return (
     <div className="posts-container-wrapper">
-      { posts.map( post => <Post post = {post} />)}; 
+      { posts.map(post => <Post post = {post} />)}; 
     </div>
   );
 };
